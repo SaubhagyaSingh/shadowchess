@@ -14,7 +14,5 @@ async def websocket_endpoint(websocket:WebSocket):
             print(data)
         
         except:
-           
             pass
-        
-        break
+            break
