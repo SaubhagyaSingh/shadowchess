@@ -9,9 +9,9 @@ import Train from "./pages/Train.jsx";
 import MyBots from "./pages/MyBots.jsx";
 function App() {
   return (
-    <div>
+    <div className="font-[Silkscreen]">
       <Router>
-        <Navbar />
+        <Navbar className="mt-0 pt-0" />
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/train" element={<Train />} />

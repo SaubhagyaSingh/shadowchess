@@ -13,7 +13,7 @@ const Navbar = () => {
     marginLeft: "5rem",
   };
   const iconContainerStyle =
-    "h-[16.6666vh] w-[5rem] flex justify-center items-center hover:translate-y-1 transition hover:translate-x-1 hover";
+    "h-[16.6666vh] w-[6rem] flex justify-center items-center hover:translate-y-1 transition hover:translate-x-1 hover";
 
   // State to manage the width of the div
   const [divWidth, setDivWidth] = useState("w-[5rem]");
@@ -40,8 +40,8 @@ const Navbar = () => {
 
   return (
     <div
-      className={`${divWidth} h-[100vh] fixed bg-[var(--bgs)] flex flex-col align-items:center justify-items:center`}
-    > 
+      className={`${divWidth}  h-[100vh] fixed bg-[var(--bgs)] flex flex-col align-items:center justify-items:center`}
+    >
       <div
         onClick={checkExpand}
         className={`${iconContainerStyle} ${textColor}`}

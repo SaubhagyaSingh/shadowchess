@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Puritan:ital,wght@0,400;0,700;1,400;1,700&family=Sacramento&family=Silkscreen:wght@400;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -10,7 +12,6 @@
     --bgp:#000a15;
     --bgs:#000000;
     --bgt:#6649b8;
-
 }
 
 body{
@@ -32,5 +33,4 @@ body::-webkit-scrollbar-thumb{
 }
 main{
     margin-left: 5rem;
-    padding: 1rem;
 }
