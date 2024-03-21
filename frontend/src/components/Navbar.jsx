@@ -41,7 +41,7 @@ const Navbar = () => {
   return (
     <div
       className={`${divWidth} h-[100vh] fixed bg-[var(--bgs)] flex flex-col align-items:center justify-items:center`}
-    >
+    > 
       <div
         onClick={checkExpand}
         className={`${iconContainerStyle} ${textColor}`}
@@ -69,7 +69,6 @@ const Navbar = () => {
         </div>
       </div>
       <div
-        onClick={checkExpand}
         className={`${iconContainerStyle} ${textColor}`}
         onMouseEnter={(e) =>
           e.currentTarget
@@ -97,7 +96,6 @@ const Navbar = () => {
         </div>
       </div>
       <div
-        onClick={checkExpand}
         className={`${iconContainerStyle} ${textColor}`}
         onMouseEnter={(e) =>
           e.currentTarget
@@ -125,7 +123,6 @@ const Navbar = () => {
         </div>
       </div>
       <div
-        onClick={checkExpand}
         className={`${iconContainerStyle} ${textColor}`}
         onMouseEnter={(e) =>
           e.currentTarget
@@ -153,7 +150,6 @@ const Navbar = () => {
         </div>
       </div>
       <div
-        onClick={checkExpand}
         className={`${iconContainerStyle} ${textColor}`}
         onMouseEnter={(e) =>
           e.currentTarget
@@ -181,7 +177,6 @@ const Navbar = () => {
         </div>
       </div>
       <div
-        onClick={checkExpand}
         className={`${iconContainerStyle} ${textColor}`}
         onMouseEnter={(e) =>
           e.currentTarget
