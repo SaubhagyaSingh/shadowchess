@@ -13,7 +13,7 @@ function App() {
       <Router>
         <Navbar className="mt-0 pt-0" />
         <Routes>
-          <Route exact path="/" element={<Home />} />
+          <Route exact path="/home" element={<Home />} />
           <Route exact path="/train" element={<Train />} />
           <Route exact path="/myBots" element={<MyBots />} />
           <Route exact path="/play_the_dev" element={<Play />} />

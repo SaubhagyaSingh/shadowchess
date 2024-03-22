@@ -12,9 +12,12 @@
     --bgp:#000a15;
     --bgs:#000000;
     --bgt:#6649b8;
+    scroll-behavior: smooth;
+
 }
 
 body{
+    color:white;
     margin: 0;
     padding: 0;
     background-color: var(--bgp);
