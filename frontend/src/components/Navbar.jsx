@@ -83,7 +83,7 @@ const Navbar = () => {
       >
         <div style={{ display: "flex", alignItems: "center" }}>
           <div style={iconStyle}>
-            <a href="/home">
+            <a href="/">
               <IoHomeSharp />
             </a>
           </div>
@@ -91,7 +91,7 @@ const Navbar = () => {
             className={`${textColor} ml-12`}
             style={{ visibility: textVisibility }}
           >
-            <a href="/home">Home</a>
+            <a href="/">Home</a>
           </span>
         </div>
       </div>

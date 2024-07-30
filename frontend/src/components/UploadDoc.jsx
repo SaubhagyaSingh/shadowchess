@@ -13,11 +13,29 @@ const UploadDoc = () => {
   };
 
   // Function to handle file upload
-  const handleUpload = () => {
-    // You can perform any file upload logic here
+  const handleUpload = async () => {
     if (selectedFile) {
-      console.log("Uploading file:", selectedFile);
-      // Reset the selectedFile state after upload
+      const formData = new FormData();
+      formData.append("file", selectedFile);
+
+      try {
+        const response = await fetch("http://localhost:3000/upload", {
+          // For FastAPI
+          // const response = await fetch("http://localhost:3000/upload", { // For Express
+          method: "POST",
+          body: formData,
+        });
+
+        if (response.ok) {
+          console.log("File uploaded successfully!");
+          // Optionally, handle the response data here
+        } else {
+          console.error("File upload failed.");
+        }
+      } catch (error) {
+        console.error("Error uploading file:", error);
+      }
+
       setSelectedFile(null);
     }
   };
