@@ -1,18 +1,15 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom"; // Import useNavigate
 
 const UploadDoc = () => {
-  // State to store the selected file
   const [selectedFile, setSelectedFile] = useState(null);
+  const navigate = useNavigate(); // Get navigate function
 
-  // Function to handle file selection
   const handleFileChange = (event) => {
-    // Get the selected file from the input element
     const file = event.target.files[0];
-    // Update the selectedFile state with the selected file
     setSelectedFile(file);
   };
 
-  // Function to handle file upload
   const handleUpload = async () => {
     if (selectedFile) {
       const formData = new FormData();
@@ -20,15 +17,13 @@ const UploadDoc = () => {
 
       try {
         const response = await fetch("http://localhost:3000/upload", {
-          // For FastAPI
-          // const response = await fetch("http://localhost:3000/upload", { // For Express
           method: "POST",
           body: formData,
         });
 
         if (response.ok) {
           console.log("File uploaded successfully!");
-          // Optionally, handle the response data here
+          navigate("/mybots"); // Navigate to /success route
         } else {
           console.error("File upload failed.");
         }
